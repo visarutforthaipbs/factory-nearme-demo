@@ -6,6 +6,7 @@ import {
   useBreakpointValue,
   Button,
 } from "@chakra-ui/react";
+import { Analytics } from "@vercel/analytics/react";
 import type {
   FactoryGeoJSON,
   FilterState,
@@ -150,6 +151,7 @@ function App() {
           isMobileSidebarOpen={isMobileSidebarOpen}
           setIsMobileSidebarOpen={setIsMobileSidebarOpen}
         />
+        <Analytics />
       </ChakraProvider>
     </div>
   );
